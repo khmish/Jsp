@@ -49,9 +49,9 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\n");
       out.write("    <head>\n");
       out.write("        <meta content=\"text/html; charset=utf-8\" http-equiv=\"Content-Type\" />\n");
-      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\"/>\n");
-      out.write("        <script src=\"jquery.min.js\"></script>\n");
-      out.write("        <script src=\"bootstrap.min.js\"></script>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n");
+      out.write("        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\n");
+      out.write("        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\n");
       out.write("        <title>log in</title>\n");
       out.write("        ");
 
@@ -67,9 +67,9 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
             }
         
       out.write("\n");
-      out.write("        \n");
+      out.write("\n");
       out.write("        <script type=\"text/javascript\">\n");
-      out.write("        \n");
+      out.write("\n");
       out.write("        </script>\n");
       out.write("    </head>\n");
       out.write("\n");
