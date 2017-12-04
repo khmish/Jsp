@@ -3,6 +3,7 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import newpackage.*;
 
 public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -45,6 +46,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
@@ -57,16 +59,25 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
 
             try{
             String user=request.getParameter("userName");
+            String pass=request.getParameter("pwsd");
             
-            if(user.length()>0 && user!=null)
+            if((user.length()>0 ) &&(pass.length()>0 ))
             {
-                out.print("<script type='text/javascript'>alert('good');</script>");
+                DBfunctions db= new DBfunctions();
+                UserTable table= new UserTable(user, pass,"","");
+                
+                if(db.login(table))
+                {
+                    session.setAttribute("UserInfo",db.getUserTable(table));
+                    response.sendRedirect("infoUser.jsp");
+                }
             }
             }catch(Exception e){
                 
             }
         
       out.write("\n");
+      out.write("        \n");
       out.write("\n");
       out.write("        <script type=\"text/javascript\">\n");
       out.write("\n");
@@ -88,7 +99,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <div class=\"form-group\">\n");
       out.write("                            <label class=\"control-label col-sm-2\" for=\"pwd\">Password:</label>\n");
       out.write("                            <div class=\"col-sm-6\">          \n");
-      out.write("                                <input type=\"password\" class=\"form-control\" id=\"pwd\" placeholder=\"Enter password\"/>\n");
+      out.write("                                <input type=\"password\" class=\"form-control\" id=\"pwd\" name=\"pwsd\" placeholder=\"Enter password\"/>\n");
       out.write("                            </div>\n");
       out.write("                        </div>\n");
       out.write("                        <div class=\"form-group\">        \n");

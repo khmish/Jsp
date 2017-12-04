@@ -1,3 +1,5 @@
+package newpackage;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,7 +16,20 @@ public class UserTable {
     private String Password;
     private String Name;
     private String Type;
+    public UserTable(String UserName,String Password,String Name,String type)
+    {
+        this.UserName=UserName;
+        this.Name=Name;
+        this.Password=Password;
+        this.Type=type;
+        
+    }
+    public UserTable()
+    {
+        
+    }
     /**
+     * 
      * @return the UserName
      */
     public String getUserName() {
@@ -68,6 +83,11 @@ public class UserTable {
      */
     public void setType(String Type) {
         this.Type = Type;
+    }
+    @Override
+    public String toString()
+    {
+        return "name "+getName()+", username "+getUserName()+", password "+getPassword()+", type "+getType();
     }
     
 }
