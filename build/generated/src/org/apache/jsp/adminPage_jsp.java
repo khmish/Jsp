@@ -6,7 +6,7 @@ import javax.servlet.jsp.*;
 import newpackage.*;
 import newpackage.*;
 
-public final class infoUser_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class adminPage_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -57,7 +57,7 @@ public final class infoUser_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<!DOCTYPE html>\n");
       out.write("﻿<html lang=\"en\">\n");
       out.write("    <head>\n");
-      out.write("        <title>User Info</title>\n");
+      out.write("        <title>Admin</title>\n");
       out.write("        <meta charset=\"utf-8\">\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
       out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\n");
@@ -115,45 +115,11 @@ public final class infoUser_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                </div>\n");
       out.write("                <div class=\"col-sm-8 text-left\">");
       out.write("\n");
-      out.write("                    <br>\n");
-      out.write("                    <div class=\"panel panel-primary\">\n");
-      out.write("                        <div class=\"panel-heading\">User Info</div>\n");
-      out.write("                        <div class=\"panel-body\">\n");
-      out.write("                            <form action=\"\">\n");
+      out.write("                    \n");
+      out.write("                    \n");
       out.write("\n");
-      out.write("                                <div class=\"input-group\">\n");
-      out.write("                                    <span class=\"input-group-addon\">Username</span>\n");
-      out.write("                                    <input id=\"msg\" type=\"text\" class=\"form-control\" name=\"msg\" placeholder=\"Additional Info\">\n");
-      out.write("                                </div>\n");
-      out.write("                                <br>\n");
-      out.write("                                <div class=\"input-group\">\n");
-      out.write("                                    <span class=\"input-group-addon\">Password</span>\n");
-      out.write("                                    <input id=\"msg\" type=\"text\" class=\"form-control\" name=\"msg\" placeholder=\"Additional Info\">\n");
-      out.write("                                </div>\n");
-      out.write("                                <br>\n");
-      out.write("                                <div class=\"input-group\">\n");
-      out.write("                                    <span class=\"input-group-addon\">Name   </span>  \n");
-      out.write("                                    <input id=\"msg\" type=\"text\" class=\"form-control\" name=\"msg\" placeholder=\"Additional Info\">\n");
-      out.write("                                </div>\n");
-      out.write("                                <br>\n");
-      out.write("                                <div class=\"input-group\">\n");
-      out.write("                                    <span class=\"input-group-addon\">Type   </span>  \n");
-      out.write("                                    <input id=\"msg\" type=\"text\" class=\"form-control\" name=\"msg\" placeholder=\"Additional Info\">\n");
-      out.write("                                </div>\n");
-      out.write("                                <br>\n");
-      out.write("                                <br>\n");
-      out.write("                                <button type=\"submit\" class=\"btn btn-primary btn-block\">Update</button>\n");
-      out.write("                            </form>\n");
-      out.write("                        </div>\n");
-      out.write("                    </div>\n");
-      out.write("                    ");
-
-                        for (int x = 0; x < 5; x++) {
-                            out.println("<br>");
-                        }
-                    
+      out.write("                </div>");
       out.write("\n");
-      out.write("                </div>\n");
       out.write("                <div class=\"col-sm-2 sidenav\">");
       out.write("\n");
       out.write("                    ");
@@ -169,7 +135,11 @@ public final class infoUser_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<div class=\"well\">\n");
       out.write("    <p>ADS</p>\n");
       out.write("</div>\n");
-      out.write("<p>ADS</p>\n");
+      out.write("<div class=\"well\">\n");
+      out.write("    <p>ADS</p>\n");
+      out.write("</div>\n");
+      out.write("<div class=\"well\">\n");
+      out.write("    <p>ADS</p>\n");
       out.write("</div>\n");
       out.write("<div class=\"well\">\n");
       out.write("    <p>ADS</p>\n");
