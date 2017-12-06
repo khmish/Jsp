@@ -58,13 +58,7 @@ public class DatabaseOperation {
          return false;
     }
  
-public ResultSet executeQuery(String query) throws SQLException{
-       
-            Statement stmt = conn.createStatement();
-            return stmt.executeQuery(query);
-        
-        
-    }
+
     
     public PreparedStatement prepareStatement(String query) throws SQLException{
         
@@ -73,9 +67,7 @@ public ResultSet executeQuery(String query) throws SQLException{
        
     }
 
-    void conn() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
     
     
 }
